@@ -20,6 +20,7 @@ public class LiquorService {
         }
         else if (type.equals(LiquorType.BEER)) {
             brands.add("Corona");
+            brands.add("Goldstar");
         }
         else {
             brands.add("No Brand Available");
