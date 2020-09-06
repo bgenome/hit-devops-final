@@ -7,80 +7,21 @@
     "id": "d44c39ee-09c2-46b2-8c36-7489d7ce547c",
     "name": "Test Wine",
     "commands": [{
-      "id": "42b4a911-9e41-456d-891a-419cc19de780",
+      "id": "2949ce60-3e84-4d00-aa03-9c630eef86e9",
       "comment": "",
       "command": "open",
       "target": "http://localhost:8080/LiquerStoreApp/",
       "targets": [],
       "value": ""
     }, {
-      "id": "c26f8893-56b7-4325-bea4-9bfcaddeced3",
+      "id": "37455abe-1256-444f-9a41-e78eda67b594",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1750x1021",
+      "target": "1750x1022",
       "targets": [],
       "value": ""
     }, {
-      "id": "91a5765e-9655-4cad-9412-c8a1ff8528d1",
-      "comment": "",
-      "command": "click",
-      "target": "css=input",
-      "targets": [
-        ["css=input", "css:finder"],
-        ["xpath=//input[@type='submit']", "xpath:attributes"],
-        ["xpath=//input", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "996b4b22-3ac5-4029-8ca7-bb04f4ca2b0b",
-      "comment": "",
-      "command": "click",
-      "target": "css=html",
-      "targets": [
-        ["css=html", "css:finder"],
-        ["xpath=//html", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "76fd0182-a2dc-4fb0-b004-71981b46d4ca",
-      "comment": "",
-      "command": "click",
-      "target": "css=center",
-      "targets": [
-        ["css=center", "css:finder"],
-        ["xpath=//center", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "6ac6ad25-225a-42ea-97f6-443cf52d6cc5",
-      "comment": "",
-      "command": "assertText",
-      "target": "css=center",
-      "targets": [
-        ["css=center", "css:finder"],
-        ["xpath=//center", "xpath:position"]
-      ],
-      "value": "Available Brands\\n\\nWe have\\n\\nAdrianna Vineyard\\nJ. P. Chenet"
-    }]
-  }, {
-    "id": "9487ba21-16c6-47e1-a440-f4b3a93f8ec6",
-    "name": "Test Beer",
-    "commands": [{
-      "id": "a183d633-40fa-4192-b472-29933c873177",
-      "comment": "",
-      "command": "open",
-      "target": "http://localhost:8080/LiquerStoreApp/",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "43bb4b6e-870c-4252-b1de-4fbce6bd2e76",
-      "comment": "",
-      "command": "setWindowSize",
-      "target": "1750x1021",
-      "targets": [],
-      "value": ""
-    }, {
-      "id": "5653af0f-76c6-42f3-af4b-7c43b3d0eb9a",
+      "id": "0de34ef7-93bc-42f0-8a29-408e54b5845c",
       "comment": "",
       "command": "click",
       "target": "name=Type",
@@ -92,25 +33,30 @@
       ],
       "value": ""
     }, {
-      "id": "378e9aaa-179e-4477-b5a8-5a20b7d90d2e",
-      "comment": "",
-      "command": "select",
-      "target": "name=Type",
-      "targets": [],
-      "value": "label=BEER"
-    }, {
-      "id": "407abc42-ddcc-4fdb-9ca3-212180038d1f",
+      "id": "495dd371-9d2b-40ed-ad7e-03df50611ddf",
       "comment": "",
       "command": "click",
-      "target": "css=option:nth-child(3)",
+      "target": "name=Type",
       "targets": [
-        ["css=option:nth-child(3)", "css:finder"],
-        ["xpath=//option[3]", "xpath:position"],
-        ["xpath=//option[contains(.,'BEER')]", "xpath:innerText"]
+        ["name=Type", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='Type']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
       ],
       "value": ""
     }, {
-      "id": "cfb505fe-994b-4f55-b495-72de4d1e008e",
+      "id": "60f1e239-b343-4d8f-8534-bfc7936cad80",
+      "comment": "",
+      "command": "click",
+      "target": "css=option:nth-child(1)",
+      "targets": [
+        ["css=option:nth-child(1)", "css:finder"],
+        ["xpath=//option", "xpath:position"],
+        ["xpath=//option[contains(.,'WINE')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d531363a-2116-4f9b-8815-0b7b608f4af9",
       "comment": "",
       "command": "click",
       "target": "css=input",
@@ -121,7 +67,7 @@
       ],
       "value": ""
     }, {
-      "id": "71d6235b-dc5c-484b-8bbb-5dfe58794faa",
+      "id": "be997b04-46bf-4790-89b2-c809323ec989",
       "comment": "",
       "command": "click",
       "target": "css=center",
@@ -131,7 +77,76 @@
       ],
       "value": ""
     }, {
-      "id": "986d9a7f-6cc8-4484-b9c8-5def5f1e9124",
+      "id": "01f3f85b-ebbf-4324-8327-1f3f85a56182",
+      "comment": "",
+      "command": "verifyElementPresent",
+      "target": "css=center",
+      "targets": [
+        ["css=center", "css:finder"],
+        ["xpath=//center", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "9487ba21-16c6-47e1-a440-f4b3a93f8ec6",
+    "name": "Test Beer",
+    "commands": [{
+      "id": "98f4e6b5-6807-423b-9b6c-45246a162951",
+      "comment": "",
+      "command": "open",
+      "target": "http://localhost:8080/LiquerStoreApp/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4886e156-f28d-40c3-ba96-9dde3e7dfa37",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1750x1022",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "318b08a3-f35a-44c1-91dc-cedd7118473e",
+      "comment": "",
+      "command": "click",
+      "target": "name=Type",
+      "targets": [
+        ["name=Type", "name"],
+        ["css=select", "css:finder"],
+        ["xpath=//select[@name='Type']", "xpath:attributes"],
+        ["xpath=//select", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "36648e4a-930c-4fda-9b0f-3c95fe292c46",
+      "comment": "",
+      "command": "select",
+      "target": "name=Type",
+      "targets": [],
+      "value": "label=BEER"
+    }, {
+      "id": "4058c500-bb9c-482f-a1f2-07b43c6857b8",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//option[contains(.,'BEER')]",
+      "targets": [
+        ["css=option:nth-child(3)", "css:finder"],
+        ["xpath=//option[3]", "xpath:position"],
+        ["xpath=//option[contains(.,'BEER')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "35c731eb-c542-4c59-9b6d-f553ec67e48c",
+      "comment": "",
+      "command": "click",
+      "target": "css=input",
+      "targets": [
+        ["css=input", "css:finder"],
+        ["xpath=//input[@type='submit']", "xpath:attributes"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "8443d63d-5cc6-49f2-8843-1adb6d2cd35c",
       "comment": "",
       "command": "click",
       "target": "css=center",
@@ -141,7 +156,17 @@
       ],
       "value": ""
     }, {
-      "id": "2de309de-95fa-4024-9021-4d80aa8aba1f",
+      "id": "647dbd58-637a-49fa-ab16-b5b8351175c9",
+      "comment": "",
+      "command": "click",
+      "target": "css=center",
+      "targets": [
+        ["css=center", "css:finder"],
+        ["xpath=//center", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b095264e-21c2-4703-b534-a2d05b372db9",
       "comment": "",
       "command": "doubleClick",
       "target": "css=center",
@@ -151,35 +176,35 @@
       ],
       "value": ""
     }, {
-      "id": "63bf3cea-edba-4321-978d-e35a01d637db",
+      "id": "77380783-8f19-4f13-860f-337221ec6542",
       "comment": "",
-      "command": "verifyText",
+      "command": "verifyElementPresent",
       "target": "css=center",
       "targets": [
         ["css=center", "css:finder"],
         ["xpath=//center", "xpath:position"]
       ],
-      "value": "Available Brands\\n\\nWe have\\n\\nCorona"
+      "value": "Corona"
     }]
   }, {
     "id": "69766ee3-80c4-4a8e-a4c1-eda6916b657d",
     "name": "Test Whisky",
     "commands": [{
-      "id": "e80ea175-48ad-420a-8ffc-49b5a3e30b8b",
+      "id": "5f3f203e-c2fb-4d3a-9696-e5d92dcaea22",
       "comment": "",
       "command": "open",
       "target": "http://localhost:8080/LiquerStoreApp/",
       "targets": [],
       "value": ""
     }, {
-      "id": "207acc88-6200-4a69-b2f3-d2ed161cb768",
+      "id": "134e3b87-6cc0-49bb-b7fb-804c248ef33e",
       "comment": "",
       "command": "setWindowSize",
-      "target": "1750x1021",
+      "target": "1750x1022",
       "targets": [],
       "value": ""
     }, {
-      "id": "c053aee1-c31f-447e-992c-d69842925977",
+      "id": "1959ad7c-0f91-419c-b759-09c0ef84c857",
       "comment": "",
       "command": "click",
       "target": "name=Type",
@@ -191,14 +216,14 @@
       ],
       "value": ""
     }, {
-      "id": "0bda84df-36fd-415b-97d7-4ae3bbfa9de6",
+      "id": "05428a2e-3d26-46fa-af81-ebe5ca472953",
       "comment": "",
       "command": "select",
       "target": "name=Type",
       "targets": [],
       "value": "label=WHISKY"
     }, {
-      "id": "a83df022-616d-4a30-b603-31db976809a6",
+      "id": "2a2d92c8-2859-453d-aea5-c7fe27aad6a6",
       "comment": "",
       "command": "click",
       "target": "css=option:nth-child(2)",
@@ -209,19 +234,7 @@
       ],
       "value": ""
     }, {
-      "id": "53535e35-5c0a-4810-8e45-1d881f3bb8ef",
-      "comment": "",
-      "command": "verifyElementPresent",
-      "target": "name=Type",
-      "targets": [
-        ["name=Type", "name"],
-        ["css=select", "css:finder"],
-        ["xpath=//select[@name='Type']", "xpath:attributes"],
-        ["xpath=//select", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "a3ffdf75-a587-4524-bcca-5109974217bf",
+      "id": "f03efc84-2ac4-4541-a053-ca670e5afc64",
       "comment": "",
       "command": "click",
       "target": "css=input",
@@ -232,7 +245,7 @@
       ],
       "value": ""
     }, {
-      "id": "d981fc0a-e21b-4282-b835-4c4c4f2a7a5b",
+      "id": "1a8cab04-3b17-4c6b-905f-a66f5b182d9f",
       "comment": "",
       "command": "click",
       "target": "css=center",
@@ -242,15 +255,32 @@
       ],
       "value": ""
     }, {
-      "id": "f4189842-a6dc-4056-b7db-bc75d1891b64",
+      "id": "239d7174-2005-444d-9dde-84e6a7fbecf2",
       "comment": "",
-      "command": "verifyText",
+      "command": "click",
       "target": "css=center",
       "targets": [
         ["css=center", "css:finder"],
         ["xpath=//center", "xpath:position"]
       ],
-      "value": "Available Brands\\n\\nWe have\\n\\nGlenfiddich\\nJohnnie Walker"
+      "value": ""
+    }, {
+      "id": "eb2aa340-faea-4921-973c-2944b725f4a1",
+      "comment": "",
+      "command": "doubleClick",
+      "target": "css=center",
+      "targets": [
+        ["css=center", "css:finder"],
+        ["xpath=//center", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09b741e1-9d8a-4233-b579-d16a240e2017",
+      "comment": "",
+      "command": "verifyTitle",
+      "target": "",
+      "targets": [],
+      "value": "http://localhost:8080/LiquerStoreApp/SelectLiquor"
     }]
   }],
   "suites": [{
